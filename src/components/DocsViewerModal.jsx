@@ -10,7 +10,8 @@ const DOCS_LIST = [
   { id: '05', title: '05. Data, Performa & Arsitektur (Slide 30-40)', filename: '05-data-performa-dan-arsitektur.md' },
   { id: '06', title: '06. Proyek Todo & Studi Kasus (Slide 41-44)', filename: '06-proyek-todo-dan-studi-kasus.md' },
   { id: '07', title: '07. Kesalahan Umum & Solusi (Slide 45)', filename: '07-kesalahan-umum-dan-solusi.md' },
-  { id: '08', title: '08. Peta Keputusan & Glosarium (Slide 47-48)', filename: '08-peta-keputusan-dan-glosarium.md' }
+  { id: '08', title: '08. Peta Keputusan & Glosarium (Slide 47-48)', filename: '08-peta-keputusan-dan-glosarium.md' },
+  { id: '09', title: '09. Redux & Redux Toolkit (RTK)', filename: '09-panduan-lengkap-redux-dan-toolkit.md' }
 ];
 
 export default function DocsViewerModal({ isOpen, onClose }) {
@@ -204,6 +205,27 @@ export default function DocsViewerModal({ isOpen, onClose }) {
                     <li>Transisi alur kompleks? 👉 <code>useReducer</code></li>
                     <li>Banyak anak butuh nilai sama? 👉 <code>useContext</code></li>
                     <li>Input macet karena filter ribuan data? 👉 <code>useTransition</code></li>
+                  </ul>
+                </div>
+              )}
+
+              {selectedDocId === '09' && (
+                <div>
+                  <h2>🗄️ Bab 09: Panduan Lengkap Redux &amp; Redux Toolkit (RTK)</h2>
+                  <p>Manajemen state global skala besar dengan alur data satu arah terprediksi (*unidirectional data flow*):</p>
+                  <h3>3 Prinsip Utama:</h3>
+                  <ol>
+                    <li><strong>Single Source of Truth:</strong> Satu pohon state tersimpan di Store pusat.</li>
+                    <li><strong>State Bersifat Read-Only:</strong> Hanya dapat diubah dengan dispatch action.</li>
+                    <li><strong>Perubahan dengan Pure Reducers:</strong> Menghitung state baru tanpa mutasi (didukung Immer di RTK).</li>
+                  </ol>
+                  <h3>Komponen Utama Redux Toolkit (RTK):</h3>
+                  <ul>
+                    <li><code>configureStore()</code>: Membuat store terpusat dengan middleware dan DevTools siap pakai.</li>
+                    <li><code>createSlice()</code>: Menggabungkan state awal, reducer, dan action creators dalam satu berkas.</li>
+                    <li><code>useSelector()</code>: Membaca bagian spesifik dari state tree di komponen React.</li>
+                    <li><code>useDispatch()</code>: Mengirim action dari UI ke Store.</li>
+                    <li><code>createAsyncThunk()</code>: Menangani lifecycle request API asinkron (pending, fulfilled, rejected).</li>
                   </ul>
                 </div>
               )}

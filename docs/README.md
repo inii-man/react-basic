@@ -18,6 +18,7 @@ Dokumentasi ini disusun secara terstruktur berdasarkan materi presentasi *"Memah
 | **06** | [06-proyek-todo-dan-studi-kasus.md](file:///Users/sulaimansaleh/Documents/uob-fullstack-mobile/react/docs/06-proyek-todo-dan-studi-kasus.md) | Bedah kode proyek Daftar Tugas (Slide 41-44), refactoring modular, custom hook `useTasks`, filter, localStorage | Slide 41 – 44, 46 |
 | **07** | [07-kesalahan-umum-dan-solusi.md](file:///Users/sulaimansaleh/Documents/uob-fullstack-mobile/react/docs/07-kesalahan-umum-dan-solusi.md) | Analisis 6 kesalahan paling fatal: mutasi state langsung, infinite re-render, stale closure, index sebagai key, effect 2x StrictMode, input terkunci | Slide 45 |
 | **08** | [08-peta-keputusan-dan-glosarium.md](file:///Users/sulaimansaleh/Documents/uob-fullstack-mobile/react/docs/08-peta-keputusan-dan-glosarium.md) | Peta keputusan sehari-hari ("Kapan pakai apa?"), Hook Cheat Sheet, dan Glosarium Istilah React A-Z | Slide 47 – 48 |
+| **09** | [09-panduan-lengkap-redux-dan-toolkit.md](file:///Users/sulaimansaleh/Documents/uob-fullstack-mobile/react/docs/09-panduan-lengkap-redux-dan-toolkit.md) | Panduan lengkap Redux & Redux Toolkit (RTK): Store, Slice, Dispatch, Selector, Thunk async, & Time-Travel Debug | Materi Lanjutan |
 
 ---
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   BookOpen, Moon, Sun, ChevronLeft, ChevronRight, Search, Play,
   HelpCircle, AlertOctagon, CheckCircle2, ListTodo, ExternalLink,
-  Code2, Sparkles, Layers, RefreshCw, Cpu
+  Code2, Sparkles, Layers, RefreshCw, Cpu, Database
 } from 'lucide-react';
 
 import { CHAPTERS, SLIDES_DATA } from './data/slidesData';
@@ -21,6 +21,7 @@ import DecisionWizard from './components/DecisionWizard';
 import CommonMistakesSandbox from './components/CommonMistakesSandbox';
 import DocsViewerModal from './components/DocsViewerModal';
 import SlideDemoContainer from './components/SlideDemoContainer';
+import ReduxToolkitLab from './components/ReduxToolkitLab';
 
 /**
  * App.jsx
@@ -175,6 +176,15 @@ export default function App() {
             <span>⚡ Lab Memoization (Slide 30)</span>
           </button>
 
+          {/* Quick Tab: Redux Toolkit Lab */}
+          <button
+            onClick={() => setActiveTab('redux')}
+            className={`chapter-pill-btn ${activeTab === 'redux' ? 'active' : ''}`}
+          >
+            <Database size={15} className="text-purple" />
+            <span>⚡ Redux Toolkit Lab</span>
+          </button>
+
           {/* Quick Tab: Peta Keputusan (Slide 47) */}
           <button
             onClick={() => setActiveTab('wizard')}
@@ -310,6 +320,13 @@ export default function App() {
         {activeTab === 'project' && (
           <div>
             <Chapter6Project />
+          </div>
+        )}
+
+        {/* VIEW: REDUX TOOLKIT LAB */}
+        {activeTab === 'redux' && (
+          <div>
+            <ReduxToolkitLab />
           </div>
         )}
       </main>
